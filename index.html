@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff0f6">
+    <title>Selamat Ulang Tahun, Bestie!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="sparkle sparkle-one" aria-hidden="true">✦</div>
+    <div class="sparkle sparkle-two" aria-hidden="true">♡</div>
+    <div class="sparkle sparkle-three" aria-hidden="true">✧</div>
+
+    <main class="birthday-card">
+      <div class="top-confetti" aria-hidden="true">🎉 🎀 🧁 🎈 🎉</div>
+
+      <p class="eyebrow">HARI SPESIAL SESEORANG YANG PALING HEBOH</p>
+      <h1>Selamat Ulang Tahun,<br><span id="friend-name">DONAT</span>! <span class="cake" aria-hidden="true">🎂</span></h1>
+      <p class="intro">INGET UMUR UDH TUA YAA DONAA</p>
+
+      <section class="photo-section" aria-labelledby="photo-title">
+        <h2 id="photo-title">Pesta kecil buat si paling heboh 🎀</h2>
+        <div class="photo-cloud" id="photo-cloud" aria-live="polite">
+          <div class="floating-photo photo-one">
+            <img src="img/1.jpeg" alt="Foto pertama dari galeri ulang tahun" loading="eager">
+          </div>
+          <div class="floating-photo photo-two">
+            <img src="img/2.jpeg" alt="Foto kedua dari galeri ulang tahun" loading="eager">
+          </div>
+          <div class="floating-photo photo-three">
+            <img src="img/3.jpeg" alt="Foto ketiga dari galeri ulang tahun" loading="eager">
+          </div>
+          <div class="floating-photo photo-four">
+            <img src="img/4.jpeg" alt="Foto keempat dari galeri ulang tahun" loading="eager">
+          </div>
+          <div class="cake-scene" aria-label="Kue ulang tahun dengan lilin menyala">
+            <span class="cake-label">HAPPY BDAY!</span>
+            <div class="candle candle-left"><i></i></div>
+            <div class="candle candle-middle"><i></i></div>
+            <div class="candle candle-right"><i></i></div>
+            <div class="cake-top"></div>
+            <div class="cake-body">
+              <span class="icing icing-one"></span>
+              <span class="icing icing-two"></span>
+              <span class="icing icing-three"></span>
+              <span class="cake-berry berry-one">🍓</span>
+              <span class="cake-berry berry-two">🍓</span>
+              <span class="cake-sprinkle sprinkle-one">✦</span>
+              <span class="cake-sprinkle sprinkle-two">✦</span>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wish-card" aria-live="polite">
+        <span class="wish-heart" aria-hidden="true">💌</span>
+        <p id="wish-text">Semoga makin bahagia, makin sukses, dan tidak ceroboh lagi!</p>
+      </section>
+
+      <div class="card-actions">
+        <button class="music-button" id="music-button" type="button" aria-pressed="false">
+          <span aria-hidden="true">▶</span>
+          <span class="music-label">Putar musik</span>
+        </button>
+        <button class="surprise-button" id="surprise-button" type="button">Klik untuk kejutan! 🎁</button>
+      </div>
+      <p class="footer-note">Dibuat karna gabut, dan ada bahan tamplate aja</p>
+    </main>
+
+    <audio id="background-music" autoplay loop preload="auto">
+      <source src="music/Happy Birthday (Piano Version).mp3" type="audio/mpeg">
+    </audio>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  </body>
+</html>
